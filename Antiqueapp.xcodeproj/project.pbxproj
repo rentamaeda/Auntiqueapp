@@ -13,6 +13,12 @@
 		CE3E928A24D3DA3300552D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3E928824D3DA3300552D04 /* Main.storyboard */; };
 		CE3E928C24D3DA3600552D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3E928B24D3DA3600552D04 /* Assets.xcassets */; };
 		CE3E928F24D3DA3600552D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3E928D24D3DA3600552D04 /* LaunchScreen.storyboard */; };
+		CE3E929724D3DB3800552D04 /* cartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E929624D3DB3800552D04 /* cartViewController.swift */; };
+		CE3E929924D3DBAE00552D04 /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E929824D3DBAE00552D04 /* accountViewController.swift */; };
+		CE3E929B24D3DBBE00552D04 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E929A24D3DBBE00552D04 /* searchViewController.swift */; };
+		CE3E929D24D3DDF100552D04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E929C24D3DDF100552D04 /* LoginViewController.swift */; };
+		CE3E92A124D3DE8300552D04 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E92A024D3DE8300552D04 /* TabBarController.swift */; };
+		CE3E92A324D3E60600552D04 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E92A224D3E60600552D04 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		CE3E928B24D3DA3600552D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3E928E24D3DA3600552D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3E929024D3DA3600552D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3E929624D3DB3800552D04 /* cartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartViewController.swift; sourceTree = "<group>"; };
+		CE3E929824D3DBAE00552D04 /* accountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
+		CE3E929A24D3DBBE00552D04 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		CE3E929C24D3DDF100552D04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE3E92A024D3DE8300552D04 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CE3E92A224D3E60600552D04 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				CE3E928424D3DA3300552D04 /* SceneDelegate.swift */,
 				CE3E928624D3DA3300552D04 /* ViewController.swift */,
 				CE3E928824D3DA3300552D04 /* Main.storyboard */,
+				CE3E929624D3DB3800552D04 /* cartViewController.swift */,
+				CE3E92A024D3DE8300552D04 /* TabBarController.swift */,
+				CE3E92A224D3E60600552D04 /* CollectionViewCell.swift */,
+				CE3E929824D3DBAE00552D04 /* accountViewController.swift */,
+				CE3E929C24D3DDF100552D04 /* LoginViewController.swift */,
+				CE3E929A24D3DBBE00552D04 /* searchViewController.swift */,
 				CE3E928B24D3DA3600552D04 /* Assets.xcassets */,
 				CE3E928D24D3DA3600552D04 /* LaunchScreen.storyboard */,
 				CE3E929024D3DA3600552D04 /* Info.plist */,
@@ -138,8 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3E929D24D3DDF100552D04 /* LoginViewController.swift in Sources */,
+				CE3E92A124D3DE8300552D04 /* TabBarController.swift in Sources */,
+				CE3E92A324D3E60600552D04 /* CollectionViewCell.swift in Sources */,
+				CE3E929724D3DB3800552D04 /* cartViewController.swift in Sources */,
 				CE3E928724D3DA3300552D04 /* ViewController.swift in Sources */,
+				CE3E929B24D3DBBE00552D04 /* searchViewController.swift in Sources */,
 				CE3E928324D3DA3300552D04 /* AppDelegate.swift in Sources */,
+				CE3E929924D3DBAE00552D04 /* accountViewController.swift in Sources */,
 				CE3E928524D3DA3300552D04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = user.Antiqueapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = user.Antiqueapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
