@@ -44,13 +44,15 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         cell.priceLabel.text = self.prices[indexPath.row]
         //④
         cell.brandLabel.text = self.brands[indexPath.row]
+        cell.ImagewidthController.constant = UIScreen.main.bounds.width/3-20
+        cell.Imageheightcontrller.constant = 150
         //⑤
         return cell
     }
     //セルのサイズ
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+/*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
                return CGSize(width: UIScreen.main.bounds.width/3-20, height: 200)
 
-    }
+    }*/
 }
 

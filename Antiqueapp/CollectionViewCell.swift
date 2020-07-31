@@ -12,5 +12,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var brandLabel: UILabel!
+    @IBOutlet weak var ImagewidthController: NSLayoutConstraint!
     
+    @IBOutlet weak var Imageheightcontrller: NSLayoutConstraint!
 }

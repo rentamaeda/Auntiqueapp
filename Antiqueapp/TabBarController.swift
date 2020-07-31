@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase // 先頭でFirebaseをimportしておく
 
 class TabBarController: UITabBarController {
 

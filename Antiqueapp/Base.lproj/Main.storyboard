@@ -206,9 +206,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGW-CA-7YL">
-                                                    <rect key="frame" x="0.0" y="273" width="242" height="17"/>
+                                                    <rect key="frame" x="0.0" y="160" width="242" height="130"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="17" id="Jac-W7-wsv"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Q3g-ol-SIb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -217,14 +217,19 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ul-Vb-pf6">
                                                     <rect key="frame" x="0.0" y="300" width="242" height="24"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="FMq-gi-z8w"/>
                                                         <constraint firstAttribute="height" constant="24" id="irV-GU-78G"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="billy-k_br9801371" translatesAutoresizingMaskIntoConstraints="NO" id="K9q-e6-lHU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="242" height="263"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="billy-k_br9801371" translatesAutoresizingMaskIntoConstraints="NO" id="K9q-e6-lHU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="242" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="242" id="tnz-jE-O5T"/>
+                                                        <constraint firstAttribute="height" constant="150" id="uJW-tm-kgy"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -242,6 +247,8 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="242" height="334"/>
                                         <connections>
+                                            <outlet property="Imageheightcontrller" destination="uJW-tm-kgy" id="b4J-Fg-0nV"/>
+                                            <outlet property="ImagewidthController" destination="tnz-jE-O5T" id="MEL-y3-l97"/>
                                             <outlet property="brandLabel" destination="8ul-Vb-pf6" id="1pQ-NW-m8M"/>
                                             <outlet property="mainImage" destination="K9q-e6-lHU" id="lQo-74-CT9"/>
                                             <outlet property="priceLabel" destination="XGW-CA-7YL" id="X23-k2-X8W"/>
@@ -274,6 +281,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xMW-hm-wox" customClass="TabBarController" customModule="Antiqueapp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cuQ-Wh-ddq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
