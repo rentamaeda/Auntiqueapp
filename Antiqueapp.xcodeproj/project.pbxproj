@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		CE3E92A124D3DE8300552D04 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E92A024D3DE8300552D04 /* TabBarController.swift */; };
 		CE3E92A324D3E60600552D04 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E92A224D3E60600552D04 /* CollectionViewCell.swift */; };
 		CE3E92A524D4111A00552D04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3E92A424D4111A00552D04 /* GoogleService-Info.plist */; };
+		CE3E92A724D5635500552D04 /* searchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E92A624D5635500552D04 /* searchCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CE3E92A024D3DE8300552D04 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CE3E92A224D3E60600552D04 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CE3E92A424D4111A00552D04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE3E92A624D5635500552D04 /* searchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				CE3E92A024D3DE8300552D04 /* TabBarController.swift */,
 				CE3E92A224D3E60600552D04 /* CollectionViewCell.swift */,
 				CE3E929824D3DBAE00552D04 /* accountViewController.swift */,
+				CE3E92A624D5635500552D04 /* searchCollectionViewCell.swift */,
 				CE3E929C24D3DDF100552D04 /* LoginViewController.swift */,
 				CE3E929A24D3DBBE00552D04 /* searchViewController.swift */,
 				CE3E928B24D3DA3600552D04 /* Assets.xcassets */,
@@ -109,7 +112,6 @@
 				AF1DFC4F714C487AF743164A /* Pods-Antiqueapp.debug.xcconfig */,
 				9EC5D616F1AA4FA2DB54CCDB /* Pods-Antiqueapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +237,7 @@
 				CE3E929724D3DB3800552D04 /* cartViewController.swift in Sources */,
 				CE3E928724D3DA3300552D04 /* ViewController.swift in Sources */,
 				CE3E929B24D3DBBE00552D04 /* searchViewController.swift in Sources */,
+				CE3E92A724D5635500552D04 /* searchCollectionViewCell.swift in Sources */,
 				CE3E928324D3DA3300552D04 /* AppDelegate.swift in Sources */,
 				CE3E929924D3DBAE00552D04 /* accountViewController.swift in Sources */,
 				CE3E928524D3DA3300552D04 /* SceneDelegate.swift in Sources */,

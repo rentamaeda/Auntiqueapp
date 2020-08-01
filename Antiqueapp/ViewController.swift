@@ -24,7 +24,8 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         //追加分
         self.fashionCollection.delegate = self
         self.fashionCollection.dataSource = self
-        
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+
     }
     //セルの数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
