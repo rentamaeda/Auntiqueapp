@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import Firebase
+
+
 
 class searchViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    
     var images = ["1","2","3","4","5","6","7","8","9","10","11","12","13"]
-          
+    var searchResult: Array<String> = []
+
        //値段の配列
        var prices = ["¥7800","¥23,000","¥36,000","¥4500","¥9650","¥6700","¥7500","¥9800","¥29,000","¥10,600","¥11,000","¥3120","¥1350"]
           
        //ブランド名の配列
        var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxing","antiqua","Tommorowland","Felissimo","Aula","Bal","Fred Perry","Grandier","HUGO","Jackman"]
 
+    //検索結果を入れる配列
+    var searchArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +38,13 @@ class searchViewController: UIViewController,UICollectionViewDelegate,UICollecti
 
         //サーチの設定
         searchBar.delegate = self
-        
+        searchResult = brands
+
+        collectionView.reloadData()
+
     }
+    
+    
     //セルの数
       func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
           return 13
@@ -74,12 +87,23 @@ class searchViewController: UIViewController,UICollectionViewDelegate,UICollecti
            searchBar.resignFirstResponder()
            searchBar.setShowsCancelButton(false, animated: true)
            print(searchBar.text! as String)
-        
-       brands = brands.filter(brands == "%@", searchBar.text)
+        searchItems(searchText: searchBar.text!
+        )
 
+       
+           }
+    
+    func searchItems(searchText: String) {
+        //brands = brands.filter(brands == "%@", searchBar.text)
+        if searchBar.text != "" {
+            searchResult = brands.filter({$0 == searchBar.text})
+                   }else {
+                   //渡された文字列が空の場合は全てを表示
+                   brands = searchResult
+               }
+               //tableViewを再読み込みする
         collectionView.reloadData()
-
-       }
+    }
     //検索結果を表示
    /* func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
            //要素を検索する
